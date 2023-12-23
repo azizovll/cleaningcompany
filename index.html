@@ -84,18 +84,27 @@
     	</div>
     </section>
 	<div class="wepred">Мы предлагаем вам зарабатывать дополнительно до 3000 руб. за ваш Лид, который арендует или покупает с вашей помощью квартиру</div>
+	<div class="wepred black">Оставьте ваши данные чтобы связались с вами</div>
 
-	<form class="custom-form" action="submit_form.php" method="post">
-		<label for="name" class="form-label">Имя *</label>
-		<input type="text" id="name" name="name" class="form-input" required>
+	<form action="mail.php" method="POST">
+		<legend class="black">Оставьте ваши данные</legend>
+
+		<div class="form-group">
+			<label for="">Введите ваше имя</label>
+			<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+		</div>
 	
-		<label for="phone" class="form-label">Номер телефона: *</label>
-		<input type="tel" id="phone" name="phone" class="form-input" required>
+		<div class="form-group">
+			<label for="">Введите номер телефона</label>
+			<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+		</div>
 	
-		<label for="agree" class="form-label1">Согласие на обработку данных: *</label>
-		<input type="checkbox" id="agree" name="agree" class="form-checkbox" required>
+		<div class="form-group">
+			<label for="">Введите email</label>
+			<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+		</div>
 	
-		<button type="submit" class="form-button">Отправить заявку</button>
+		<button type="submit" class="btn btn-primary">Отправить форму</button>
 	</form>
 	
 
@@ -237,6 +246,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
