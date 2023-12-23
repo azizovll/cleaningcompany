@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = "Имя: $name\nНомер телефона: $phone\n$agree";
 
     // Дополнительные заголовки
-    $headers = "From: webmaster@example.com"; // Замените на ваш реальный адрес электронной почты
+    $headers = "From: abdulborijazizov@gmail.com"; // Замените на ваш реальный адрес электронной почты
     $headers .= "\r\nReply-To: $name <$to>";
 
     // Отправка электронной почты
